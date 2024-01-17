@@ -158,6 +158,7 @@ enable_testing()
 add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND})
 
 include_directories(.)
+include_directories(depends)
 
 add_subdirectory(depends)
 add_subdirectory(libiop)
